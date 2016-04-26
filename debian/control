@@ -1,0 +1,18 @@
+Source: golang-github-mattn-go-sqlite3
+Section: devel
+Priority: extra
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Build-Depends: debhelper (>= 9),golang-go, dh-golang, libsqlite3-dev
+Standards-Version: 3.9.5
+Homepage: https://github.com/mattn/go-sqlite3
+
+Package: golang-github-mattn-go-sqlite3-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsqlite3-dev
+Conflicts: golang-go-sqlite3-dev
+Breaks: golang-go-sqlite3-dev
+Provides: golang-go-sqlite3-dev
+Description: Sqlite3 driver for GO
+ Sqlite3 driver conforming to the built-in database/sql interface.
+ .
+ This package contains the source.
